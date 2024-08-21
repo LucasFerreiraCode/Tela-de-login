@@ -1,0 +1,21 @@
+body {
+    background-color: #4c4951;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    gap: 2rem;
+    color: white;
+}
+
+.info {
+    border-bottom: 1px solid black;
+    margin: 1rem;
+    padding: 0 1rem;
+}
