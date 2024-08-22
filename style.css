@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital@0;1&display=swap');
+
 html, body {
     width: 100%;
     height: 100vh;
-    background: rgb(222,192,205);
-background: radial-gradient(circle, rgba(222,192,205,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(144,155,166);
+    background: radial-gradient(circle, rgba(144,155,166,1) 11%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +16,13 @@ background: radial-gradient(circle, rgba(222,192,205,1) 0%, rgba(0,0,0,1) 100%);
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
-    background-color: #66666b;
+    background-color: transparent;
     border-radius: 3rem;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 450px;
     gap: 2rem;
     color: white;
+    font-family: "EB Garamond", serif;
 }
 
 .info {
@@ -44,4 +47,18 @@ button {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+
+.descricao {
+    border: none;
+    gap: 2rem;
+}
+
+.input-sem-borda {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    color: white;
 }
