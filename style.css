@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --cor-primaria: #ffffff;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-segundaria: "Roboto", sans-serif;
+}
 
 html, body {
     width: 100%;
@@ -8,6 +16,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Krona One', sans-serif;
 }
 
 .login {
@@ -21,7 +30,7 @@ html, body {
     width: 400px;
     height: 450px;
     color: white;
-    font-family: "EB Garamond", serif;
+    font-family: 'Krona One', sans-serif;
 }
 
 .info {
@@ -32,27 +41,34 @@ html, body {
     padding: 0.2rem;
     gap: 1rem;
     color: white !important;
+    font-family: 'Krona One', sans-serif;
 }
 
 input::placeholder {
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 10%;
     background-color: #a2a2aa;
     border-radius: 10px;
     padding: 1rem 5rem;
     color: white;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 10%;
     border: none;
+    font-family: 'Krona One', sans-serif;
 }
 
 .footer-login {
     display: flex;
-    justify-content: space-between;
     gap: 1rem;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
 .descricao {
@@ -60,7 +76,7 @@ button {
     opacity: 30%;
     font-size: 20px;
     margin-bottom: 1rem;
-    color: #a2a2aa;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,12 +90,13 @@ button {
 }
 
 .input-sem-borda {
+    display: flex;
     border: none;
     outline: none;
     background-color: transparent;
-    font-family: "EB Garamond", serif;
     font-size: 16px;
     color: white;
+    font-family: 'Krona One', sans-serif;
 }
 
 .lembrar-senha {
@@ -87,6 +104,17 @@ button {
 }
 
 .linha-login {
+    width: 80%;
+    margin-top:-30px !important;
+}
 
-    width: 50%;
+.esqueceu-senha {
+    font-family: 'Krona One', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+button:hover {
+    background: rgb(71,76,77);
+    background: radial-gradient(circle, rgba(71,76,77,1) 1%, rgba(0,0,0,1) 100%);
 }
