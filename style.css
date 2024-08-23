@@ -12,7 +12,7 @@ html, body {
 
 .login {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
@@ -20,7 +20,6 @@ html, body {
     border-radius: 3rem;
     width: 400px;
     height: 450px;
-    gap: 2rem;
     color: white;
     font-family: "EB Garamond", serif;
 }
@@ -30,17 +29,24 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 1rem;
-    padding: 0 1rem;
+    padding: 0.2rem;
+    gap: 1rem;
+    color: white !important;
+}
+
+input::placeholder {
+    color: white;
 }
 
 button {
-    background-color: #66666b;
+    background-color: #a2a2aa;
     border-radius: 10px;
     padding: 1rem 5rem;
     color: white;
     font-size: 16px;
     text-transform: uppercase;
+    margin-top: 10%;
+    border: none;
 }
 
 .footer-login {
@@ -50,8 +56,21 @@ button {
 }
 
 .descricao {
+    background-color: white;
+    opacity: 30%;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #a2a2aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    gap: 2rem;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    border-radius: 3rem;
+    height: 15%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .input-sem-borda {
@@ -61,4 +80,13 @@ button {
     font-family: "EB Garamond", serif;
     font-size: 16px;
     color: white;
+}
+
+.lembrar-senha {
+    margin-right: auto;
+}
+
+.linha-login {
+
+    width: 50%;
 }
