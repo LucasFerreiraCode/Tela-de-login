@@ -118,3 +118,15 @@ button:hover {
     background: rgb(71,76,77);
     background: radial-gradient(circle, rgba(71,76,77,1) 1%, rgba(0,0,0,1) 100%);
 }
+
+.btn-senha {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+
+}
+
+.btn-senha:hover {
+    background:transparent;
+}

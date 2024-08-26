@@ -8,6 +8,47 @@
     <link rel="icon" href="./img/monitor.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Tela de login</title>
+
+    <script>
+        function validarEmail() {
+            var email = document.querySelector('.input-sem-borda').value;
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!regex.test(email)) {
+                alert("Por favor, insira um email válido.");
+                return false; // Impede o envio do formulário
+            } else {
+                alert("Sucesso!");
+            }
+
+            return true; // Permite o envio do formulário
+        }
+        function mudarIcone() {
+            var btn = document.querySelector('.btn-senha');
+            var icone = btn.querySelector('i');
+            var inputSenha = document.querySelector('.texto-senha');
+
+            if (icone.classList.contains('fa-eye')) {
+                icone.classList.remove('fa-eye');
+                icone.classList.add('fa-eye-slash');
+                inputSenha.type = 'text'; // Torna a senha visível
+            } else {
+                icone.classList.remove('fa-eye-slash');
+                icone.classList.add('fa-eye');
+                inputSenha.type = 'password'; // Oculta a senha
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var emailInput = document.querySelector('.input-sem-borda');
+
+            emailInput.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    validarEmail();
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -15,11 +56,15 @@
     <section class="login">
         <div class="descricao">CUSTOMER LOGIN</div>
         <div class="info"><i class="fa-regular fa-envelope"></i>
-        <input type="text" placeholder="Email ID" class="input-sem-borda">
+            <input type="text" placeholder="Email ID" class="input-sem-borda">
         </div>
         <hr class="linha-login">
         <div class="info">
-        <i class="fa-solid fa-lock"></i><input type="text" placeholder="Password" class="input-sem-borda" class="texto-senha"></div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" class="input-sem-borda texto-senha">
+            <button   onclick="mudarIcone()" class="btn-senha"><i class="fa-regular fa-eye"></i>
+        </div>
+        </button>
         <hr class="linha-login">
         <div class="footer-login">
             <input type="checkbox" name="" id="" class="lembrar-senha">
@@ -28,8 +73,8 @@
                 Forgot password?
             </div>
         </div>
-        
-        <button>login</button>
+
+        <button onclick="return validarEmail()">login</button>
     </section>
 </body>
 
